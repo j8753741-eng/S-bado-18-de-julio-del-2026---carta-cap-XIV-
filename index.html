@@ -4,14 +4,15 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
-
+<title>SÁBADO 18 DE JULIO DEL 2026 - CARTA (CAP XIV)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 
@@ -22,137 +23,304 @@ box-sizing:border-box;
 }
 
 body{
+
 background:
-radial-gradient(circle at top,#38281b 0%,#211811 45%,#140f0b 100%);
-font-family:'Cormorant Garamond',serif;
-display:flex;
-justify-content:center;
-align-items:center;
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
+
 min-height:100vh;
-padding:45px;
+
+font-family:'Cormorant Garamond',serif;
+
+padding:60px 20px;
+
+overflow-x:hidden;
+
 }
 
-.book-page{
-position:relative;
-width:min(900px,100%);
-padding:70px 70px 130px;
-background:linear-gradient(180deg,#faf3e5,#f2e7d1,#ecdec4);
-border:2px solid #c8ae7b;
-box-shadow:0 0 65px rgba(0,0,0,.55), inset 0 0 90px rgba(124,95,56,.12);
-overflow:hidden;
-}
+body::before{
 
-.book-page::before{
 content:"";
-position:absolute;
-top:18px;
-left:18px;
-right:18px;
-bottom:18px;
-border:1px solid rgba(149,112,62,.35);
+
+position:fixed;
+
+inset:0;
+
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+
+opacity:.35;
+
+pointer-events:none;
+
 }
 
-.book-page::after{
-content:"❦";
-position:absolute;
-top:28px;
-right:30px;
-font-size:30px;
-color:#b89d68;
-opacity:.45;
+.book{
+
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
+
+position:relative;
+
 }
 
-.ornament{
+.cover-title{
+
 text-align:center;
-font-size:24px;
-letter-spacing:8px;
-color:#8d6842;
-margin-bottom:25px;
-}
 
-.book-title{
-text-align:center;
-font-size:18px;
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+color:#f7d98d;
+
 letter-spacing:3px;
-text-transform:uppercase;
-color:#694b2b;
-margin-bottom:18px;
+
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+
+margin-bottom:22px;
+
 }
 
-.chapter{
+.page{
+
+background:
+linear-gradient(#f9f0d9,#efe1bf);
+
+border-radius:10px;
+
+padding:65px;
+
+position:relative;
+
+box-shadow:
+inset 0 0 30px rgba(0,0,0,.12);
+
+}
+
+.page::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
+
+pointer-events:none;
+
+}
+
+.corner{
+
+position:absolute;
+
+font-size:44px;
+
+color:#b08a45;
+
+opacity:.7;
+
+}
+
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
+
+.header{
+
 text-align:center;
-font-size:34px;
-font-weight:600;
-letter-spacing:3px;
-color:#4d3520;
-margin-bottom:12px;
+
+margin-bottom:55px;
+
+}
+
+.header h1{
+
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+line-height:1.5;
+
+color:#5b3213;
+
+margin-bottom:22px;
+
 }
 
 .date{
-text-align:center;
-font-size:17px;
+
+font-size:1rem;
+
+color:#7b5c2e;
+
 letter-spacing:1px;
-color:#7c5d37;
-margin-bottom:50px;
+
 }
 
-.content{
-border:1px dashed rgba(150,113,63,.45);
-background:rgba(255,255,255,.12);
-padding:45px 35px;
-text-align:center;
-line-height:2;
-font-size:22px;
-font-style:italic;
-color:#5a4127;
-}
+.greeting{
 
-.content strong{
-font-size:24px;
-font-style:normal;
-}
-
-#countdown{
 margin-top:35px;
-font-size:42px;
-font-weight:bold;
-letter-spacing:4px;
-color:#7a2d2d;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:3rem;
+
+color:#7b4323;
+
+margin-bottom:28px;
+
 }
 
-.count-text{
-margin-top:18px;
-font-size:18px;
-font-style:normal;
-color:#6d5130;
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
 }
 
-.status{
-margin-top:45px;
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+strong{
+
+font-weight:700;
+
+}
+
+.divider{
+
 text-align:center;
-font-size:18px;
-line-height:1.9;
+
+font-size:26px;
+
+margin:35px 0;
+
+color:#9b7643;
+
+}
+
+.page-turn{
+
+margin:55px auto 25px;
+
+text-align:center;
+
+}
+
+.page-turn-text{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.25rem;
+
+color:#7a5b39;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
 font-style:italic;
-color:#6b4d2d;
+
 }
 
-.seal{
-margin:55px auto 0;
-width:78px;
-height:78px;
-border-radius:50%;
-background:radial-gradient(circle at 30% 30%,#a43d3d,#6d1919 70%);
-border:4px solid #d5b37a;
-box-shadow:0 8px 15px rgba(0,0,0,.25), inset 0 0 12px rgba(255,255,255,.15);
-}
+.page-corner{
 
-.page-number{
-position:absolute;
-bottom:28px;
-right:42px;
-font-size:17px;
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:170px;
+
+height:70px;
+
+background:linear-gradient(145deg,#f8f0dc,#ead8b3);
+
+border:2px solid #c9a36b;
+
+text-decoration:none;
+
+color:#6b4725;
+
+font-family:'Cinzel',serif;
+
+font-size:.9rem;
+
 letter-spacing:2px;
-color:#765737;
+
+clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.18);
+
+transition:.35s;
+
+}
+
+.page-corner:hover{
+
+transform:translateY(-5px) rotate(-2deg);
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.28);
+
+}
+
+.page-corner span{
+
+padding:0 12px;
+
+text-align:center;
+
 }
 
 </style>
@@ -161,51 +329,423 @@ color:#765737;
 
 <body>
 
-<div class="book-page">
+<div class="book">
 
-<div class="ornament">
-✦ ❦ ✦ ❦ ✦ ❦ ✦
-</div>
+<div class="cover-title">
 
-<div class="book-title">
 ✦ Donde Siempre Vuelve Mi Corazón ✦
+
 </div>
 
-<div class="chapter">
-Capítulo XIV
-</div>
+<div class="page">
 
-<div class="date">
-Sábado 18 de julio de 2026 • Noche
-</div>
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
 
-<div class="content">
+<div class="header">
 
-<strong>
-La siguiente página ya existe... pero el tiempo aún no ha permitido que estas hojas la revelen.
-</strong>
+<h1>
+
+<strong>CAPÍTULO XIV</strong>
 
 <br><br>
 
-Cada latido del reloj acerca el instante en que este antiguo libro volverá a confiarle una nueva historia al corazón.
+<strong>
 
-<div id="countdown">
-00:00:00
-</div>
+DONDE LOS SÁBADOS APRENDIERON A LLEVAR TU NOMBRE
 
-<div class="count-text">
-Solo el tiempo conoce el momento exacto en que la próxima página despertará.
-</div>
+</strong>
 
-</div>
+</h1>
 
-<div class="status">
-✦ Hay capítulos que esperan en silencio, porque saben que los recuerdos más hermosos siempre llegan en el instante perfecto. ✦
-</div>
+<div class="date">
 
-<div class="seal"></div>
-
+<strong>Sábado, 18 de julio del 2026 – Noche</strong>
   
+</div>
+
+</div>
+
+<div class="greeting">
+
+Mon Étoile:
+
+</div>
+
+
+<p class="first">
+
+Hay noches en las que las páginas de este antiguo libro parecen escribirse con una tinta distinta. No porque haya sucedido algo extraordinario, sino porque el corazón descubre el verdadero valor de aquello que parecía cotidiano. Esta noche cierro un capítulo con una mezcla de gratitud y nostalgia, porque comprendí que había un pequeño rincón de mi semana que solo tenía sentido gracias a ti.
+
+</p>
+
+<p>
+
+Quién hubiera pensado que unos simples pre-ICFES terminarían convirtiéndose en uno de los momentos más importantes de mis sábados. Al principio eran solo unas horas para estudiar, pero el tiempo, con su manera silenciosa de revelar los sentimientos, me enseñó que el verdadero motivo por el que esperaba ese día con tanta ilusión no eran las clases... eras tú.
+
+</p>
+
+<p>
+
+Tú eras el comienzo de mi mejor sábado.
+
+</p>
+
+<p>
+
+Bastaba con saber que iba a verte para que toda la semana pareciera más ligera. Los días pasaban con una esperanza especial, porque al final sabía que llegaría ese momento en el que volvería a encontrarte, aunque fuera por un rato. Y aunque el tiempo siempre pasaba demasiado rápido, esos pequeños instantes contigo tenían el poder de llenar mi corazón durante muchos días más.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Hoy entendí que lo único que realmente voy a extrañar de los sábados de pre-ICFES no será el lugar, ni el salón, ni las clases, ni la rutina. Lo único que voy a extrañar eres tú.
+
+</p>
+
+<p>
+
+Voy a extrañar buscarte con la mirada apenas llegaba. Voy a extrañar la emoción que sentía al saber que estabas cerca. Voy a extrañar esos segundos en los que podía contemplarte sin importar todo lo que estuviera pasando a nuestro alrededor. Porque incluso cuando el tiempo era corto, mi corazón encontraba la felicidad completa con solo saber que estabas ahí.
+
+</p>
+
+<p>
+
+Y ahora que esos sábados quedaron atrás, siento un pequeño vacío que solo lleva tu nombre.
+
+</p>
+
+<p>
+
+Me haces demasiada falta, Mon Étoile. Mucho más de la que soy capaz de explicar con palabras. Me hace falta escuchar tu voz de cerca, poder mirarte unos minutos más y sentir esa tranquilidad que solamente encuentro cuando estoy contigo. Hay personas que creen que unas pocas horas no cambian nada, pero ellas nunca han amado como yo te amo. Porque cuando el amor es verdadero, hasta los encuentros más pequeños terminan convirtiéndose en recuerdos inmensos.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+A veces cierro los ojos y vuelvo a imaginar aquellos sábados. Imagino el instante en que te veía llegar, la felicidad que sentía al saber que compartiríamos unas horas más y la tristeza silenciosa que aparecía cuando llegaba el momento de despedirnos. Nunca pensé que llegaría a extrañar tanto algo que parecía tan sencillo.
+
+</p>
+
+<p>
+
+Pero así es el amor. Nos enseña que los momentos más valiosos no siempre son los más largos, sino aquellos que se viven con el corazón completamente abierto. Y tú has sido precisamente eso para mí: el lugar donde mi alma descansa, la paz que encuentro después de los días difíciles, la sonrisa que aparece incluso cuando todo parece complicado y el pensamiento que acompaña cada uno de mis amaneceres y también cada una de mis noches.
+
+</p>
+
+<p>
+
+Si pudiera volver atrás, no cambiaría absolutamente nada. Viviría otra vez cada sábado contigo. Volvería a emocionarme al saber que iba a encontrarte. Volvería a guardar cada mirada, cada sonrisa y cada instante como si fueran pequeños tesoros destinados a quedarse conmigo para siempre.
+
+</p>
+
+<div class="divider">❦</div>
+
+<p>
+
+Porque el tiempo puede llevarse los horarios, las rutinas y los lugares, pero jamás podrá llevarse todo lo que hiciste sentir a mi corazón. Y aunque ya no existan esos sábados para encontrarnos allí, seguiré esperando con la misma ilusión cada oportunidad que tenga de verte, porque ningún lugar es especial por sí mismo; los lugares se vuelven inolvidables cuando la persona que amas está en ellos.
+
+</p>
+
+<p>
+
+Así termina este capítulo, no con un adiós, sino con una promesa. La promesa de seguir amándote con la misma intensidad con la que te amé aquel primer sábado en el que entendí que no estaba esperando una clase... estaba esperando el momento de volver a encontrarme contigo.
+
+</p>
+
+<p>
+
+Porque mientras existan páginas en este viejo libro, siempre habrá un espacio reservado para escribir tu nombre. Y mientras mi corazón siga latiendo, seguirá recordando que incluso unas pocas horas a tu lado fueron suficientes para convertirse en algunos de los recuerdos más hermosos de toda mi vida.
+
+</p>
+
+<p>
+
+Mon Étoile... gracias por haber convertido unos simples sábados en capítulos inolvidables de nuestra historia.
+
+</p>
+
+<p>
+
+Y recuerda siempre esto: no importa cuántos días pasen, cuántas semanas cambien o cuántos caminos recorramos... siempre serás el amor más bonito que la vida decidió escribir entre las páginas de mi destino.
+
+</p>
+
+<p style="text-align:center;">
+
+<strong>
+
+Con todo mi amor, hoy, mañana y por el resto de mi vida. ❤️
+
+</strong>
+
+</p> 
+
+
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
+
+}
+
+.book-quote::before{
+
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#8b3dff;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
+
+}
+
+</style>
+
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+Los antiguos cronistas afirmaban que los grandes amores no se medían por la cantidad de tiempo compartido, sino por la huella que dejaban incluso en los encuentros más breves. Bastaba una mirada para cambiar un día entero, un abrazo para darle sentido a una semana y unos cuantos minutos juntos para llenar de esperanza un corazón durante mucho tiempo. Tal vez por eso comprendí que no eran los sábados los que hacían especial nuestra historia, sino tu presencia en ellos. Porque donde tú estabas, el tiempo adquiría un valor que ningún reloj podía medir. Y si algún día estas páginas sobreviven a los años, deseo que quien las lea descubra que aquí existió un amor capaz de convertir los instantes más sencillos en recuerdos eternos, porque tuvo la fortuna de encontrar a la mujer que transformó cada capítulo de su vida en el más hermoso de todos.
+
+<br><br>
+
+✨ <span style="font-size:1.65rem;">VALERIA PETRO VILLAZÓN</span> ❤️
+
+</strong>
+
+</p>
+
+</div>
+
+<style>
+
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
+
+display:flex;
+
+justify-content:center;
+
+margin:45px 0 15px;
+
+}
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+transition:.35s ease;
+
+}
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+}
+
+.ribbon{
+
+width:6px;
+
+height:95px;
+
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
+
+margin:0 auto;
+
+border-radius:5px;
+
+}
+
+.end-message{
+
+margin-top:28px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.3rem;
+
+color:#7b4323;
+
+}
+
+.page-number{
+
+margin-top:40px;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
+
+}
+
+</style>
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Viernes-17-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+
+</div>
+
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>
+
+Los capítulos cambian, los días avanzan y los lugares quedan atrás; pero el amor verdadero siempre encuentra una nueva página para volver a escribir "nosotros".
+
+</strong>
+</p>
+
+<a href="https://j8753741-eng.github.io/S-bado-18-de-julio-del-2026---carta-cap-XIV-/"
+class="page-corner">
+
+<span>
+
+✦ Pasar la página ✦
+
+</span>
+
+</a>
+
+</div>
+
+<div class="ribbon"></div>
+
+<div class="end-message">
+
+<strong>
+
+Mientras exista una sola noche para escribirte, este viejo libro seguirá recordándole al tiempo que mi lugar favorito siempre será tu corazón.
+
+</strong>
+
+</div>
+
 <div class="page-number">
 
 ❦ &nbsp; XIV &nbsp; ❦
@@ -214,54 +754,8 @@ Solo el tiempo conoce el momento exacto en que la próxima página despertará.
 
 </div>
 
-<script>
-
-const fechaObjetivo = new Date("2026-07-18T21:30:00");
-
-function actualizarContador(){
-
-    const ahora = new Date();
-
-    const diferencia = fechaObjetivo.getTime() - ahora.getTime();
-
-    if(diferencia <= 0){
-
-        document.getElementById("countdown").innerHTML = "✦ Ya disponible ✦";
-        return;
-
-    }
-
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-    let texto = "";
-
-    if(dias > 0){
-
-        texto += String(dias).padStart(2,"0") + "d ";
-
-    }
-
-    texto +=
-        String(horas).padStart(2,"0") + ":" +
-        String(minutos).padStart(2,"0") + ":" +
-        String(segundos).padStart(2,"0");
-
-    document.getElementById("countdown").textContent = texto;
-
-}
-
-actualizarContador();
-
-setInterval(actualizarContador,1000);
-
-</script>
+</div>
 
 </body>
 
-</html>
+  </html>
